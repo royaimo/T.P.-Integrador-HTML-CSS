@@ -1,0 +1,203 @@
+:root {
+    --fuentePrincipal: font-family: 'Roboto', sans-serif, monospace;
+    --fuenteSecundaria: Arial, Helvetica, sans-serif;
+    --primero: #fcfcfc;
+    --segundo: #1c82aad1;
+    --tercero: #1ad21a;
+    --blanco: #fff;
+    --negro: #000;
+}
+
+/* Globales */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: var(--primero);
+    font-size: 1.6rem;
+    /*HACK que va a la par de font-size: 62.5%; así 1rem=10px y podemos usar rem en toda la página*/
+    line-height: 1.5;
+    /*1.5 tomado respecto a la base de la fuente, o sea en proporción a font-size: 1.6rem*/
+}
+
+p {
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    /* width: 100%; deforma la imagen mostrandola del tamaño de la pantalla entera
+    max-width le da el 100% de su tamaño original*/
+    width: 100%;
+}
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+    /*centramos el contenido*/
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+
+h1 {
+    font-size: 4.2rem;
+}
+
+h2 {
+    font-size: 3.7rem;
+}
+
+h3 {
+    font-size: 2.6rem;
+}
+
+/* Media Queries */
+
+/* navegacion */
+@media screen and (max-width: 768px) {
+
+    .navbar-brand img,
+    .navbar-brand h3 {
+        display: none;
+    }
+}
+
+
+
+/* Desarrollo de la navegacion */
+.navbar-collapse {
+    /* border: 1px solid red; */
+    justify-content: space-between;
+}
+
+.navbar {
+    background-color: var(--negro);
+    opacity: .7;
+}
+
+.toggler-icon {
+    border: 1px solid yellow;
+    border-radius: .3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: .5rem;
+    color: var(--primero);
+    font-size: 700;
+
+}
+
+.navbar-brand {
+    justify-content: center;
+    align-items: center;
+    margin: 0rem 2rem 0rem 1rem;
+}
+
+.navbar-brand img {
+    max-width: 10rem;
+    margin-left: 1rem;
+    padding: 0;
+}
+
+.navbar-brand h3 {
+    color: var(--blanco);
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav__contendor {
+    margin-left: 2rem;
+}
+
+.nav-item p {
+    color: #999999;
+    font-family: var(--fuentePrincipal);
+    font-size: 1.3rem;
+    margin: .5rem;
+    padding: 0;
+    white-space: nowrap;
+}
+
+.nav-item:nth-child(1) p {
+    color: var(--primero);
+}
+
+.nav-item:nth-child(5) p {
+    color: var(--tercero);
+}
+
+/* <!-- Carousel con Fotos. Descripcion de la conferencia --> */
+.proyecto {
+    position: relative;
+}
+
+.proyecto img {
+    background-color: rgba(0, 0, 0, 50%);
+    max-height: 700px;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 50%);
+}
+
+.overlay-contenido {
+    position: absolute;
+    top: -17%;
+    left: 42%;
+    transform: translate(-7%, 223%);
+    color: var(--blanco);
+}
+
+.carousel-item--boton {
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.carousel-item--boton .boton1 {
+    padding: 1.5rem 2.5rem;
+    border-radius: 1rem;
+    text-align: center;
+    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 2px solid var(--blanco);
+    color: var(--blanco);
+    font-family: var(--fuentePrincipal);
+    font-size: 2rem;
+ 
+}
+.carousel-item--boton .boton2 {
+    padding: 1.5rem 2.5rem;
+    border-radius: 1rem;
+    text-align: center;
+    background-color: transparent;
+    background-color: var(--tercero);
+    font-family: var(--fuentePrincipal);
+    font-size: 2rem;
+    color: var(--blanco);
+ 
+}
