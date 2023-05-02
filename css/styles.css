@@ -30,7 +30,7 @@ body {
 
 p {
     font-size: 1.8rem;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--fuentePrincipal);
     margin: 0;
     padding: 0;
 }
@@ -165,39 +165,292 @@ h3 {
     background-color: rgba(0, 0, 0, 50%);
 }
 
-.overlay-contenido {
-    position: absolute;
-    top: -17%;
-    left: 42%;
-    transform: translate(-7%, 223%);
-    color: var(--blanco);
+@media screen and (max-width: 400px) {
+
+    .overlay-contenido {
+        position: absolute;
+        top: 28%;
+        left: 18%;
+        transform: translate(-2%, -7%);
+        color: var(--blanco);
+    }
+
+    .carousel-item--parrafo h2 {
+        font-size: 1.1rem;
+    }
+
+    .carousel-item--parrafo p {
+        font-size: .7rem;
+    }
+
+    .carousel-item--boton {
+        gap: 2rem;
+        margin-top: 1rem;
+    }
+
+    .carousel-item--boton .boton1 {
+        padding: .4rem .9rem;
+        border-radius: 1rem;
+        text-align: center;
+        background-color: transparent;
+        background-color: rgba(0, 0, 0, 0.1);
+        border: 2px solid var(--blanco);
+        color: var(--blanco);
+        font-family: var(--fuentePrincipal);
+        font-size: .9rem;
+    }
+
+    .carousel-item--boton .boton2 {
+        padding: .4rem .9rem;
+        border-radius: 1rem;
+        text-align: center;
+        background-color: transparent;
+        background-color: var(--tercero);
+        font-family: var(--fuentePrincipal);
+        font-size: .9rem;
+        color: var(--blanco);
+
+    }
 }
 
-.carousel-item--boton {
-    gap: 2rem;
-    margin-top: 1rem;
+@media screen and (min-width: 400px) {
+
+    .overlay-contenido {
+        position: absolute;
+        top: 33%;
+        left: 25%;
+        transform: translate(0%, -3%);
+        color: var(--blanco);
+    }
+
+    .carousel-item--parrafo h2 {
+        font-size: 1.8rem;
+    }
+
+    .carousel-item--parrafo p {
+        font-size: 1rem;
+    }
+
+    .carousel-item--boton {
+        gap: 2rem;
+        margin-top: 1rem;
+    }
+
+    .carousel-item--boton .boton1 {
+        padding: .5rem 1rem;
+        border-radius: 1rem;
+        text-align: center;
+        background-color: transparent;
+        background-color: rgba(0, 0, 0, 0.1);
+        border: 2px solid var(--blanco);
+        color: var(--blanco);
+        font-family: var(--fuentePrincipal);
+        font-size: 1rem;
+    }
+
+    .carousel-item--boton .boton2 {
+        padding: .5rem 1rem;
+        border-radius: 1rem;
+        text-align: center;
+        background-color: transparent;
+        background-color: var(--tercero);
+        font-family: var(--fuentePrincipal);
+        font-size: 1rem;
+        color: var(--blanco);
+
+    }
 }
 
-.carousel-item--boton .boton1 {
-    padding: 1.5rem 2.5rem;
-    border-radius: 1rem;
-    text-align: center;
-    background-color: transparent;
-    background-color: rgba(0, 0, 0, 0.1);
-    border: 2px solid var(--blanco);
-    color: var(--blanco);
-    font-family: var(--fuentePrincipal);
-    font-size: 2rem;
- 
+@media screen and (min-width: 492px) {
+
+    .overlay-contenido {
+        position: absolute;
+        top: 40%;
+        left: 30%;
+        transform: translate(-3%, -5%);
+        color: var(--blanco);
+
+    }
+
+    .carousel-item--parrafo h2 {
+        font-size: 1.8rem;
+    }
+
+    .carousel-item--parrafo p {
+        font-size: 1.2rem;
+    }
+
+    .carousel-item--boton {
+        gap: 2rem;
+        margin-top: 1rem;
+    }
+
+    .carousel-item--boton .boton1 {
+        padding: .5rem 1rem;
+        border-radius: 1rem;
+        text-align: center;
+        background-color: transparent;
+        background-color: rgba(0, 0, 0, 0.1);
+        border: 2px solid var(--blanco);
+        color: var(--blanco);
+        font-family: var(--fuentePrincipal);
+        font-size: 1rem;
+    }
+
+    .carousel-item--boton .boton2 {
+        padding: .5rem 1rem;
+        border-radius: 1rem;
+        text-align: center;
+        background-color: transparent;
+        background-color: var(--tercero);
+        font-family: var(--fuentePrincipal);
+        font-size: 1rem;
+        color: var(--blanco);
+
+    }
 }
-.carousel-item--boton .boton2 {
-    padding: 1.5rem 2.5rem;
-    border-radius: 1rem;
-    text-align: center;
-    background-color: transparent;
-    background-color: var(--tercero);
-    font-family: var(--fuentePrincipal);
-    font-size: 2rem;
-    color: var(--blanco);
- 
+
+@media screen and (min-width: 600px) {
+
+    .overlay-contenido {
+        position: absolute;
+        top: 40%;
+        left: 30%;
+        transform: translate(-3%, -5%);
+        color: var(--blanco);
+
+    }
+
+    .carousel-item--parrafo h2 {
+        font-size: 1.8rem;
+    }
+
+    .carousel-item--parrafo p {
+        font-size: 1.3rem;
+    }
+
+    .carousel-item--boton {
+        gap: 2rem;
+        margin-top: 1rem;
+    }
+
+    .carousel-item--boton .boton1 {
+        padding: .6rem 1.1rem;
+        border-radius: 1rem;
+        text-align: center;
+        background-color: transparent;
+        background-color: rgba(0, 0, 0, 0.1);
+        border: 2px solid var(--blanco);
+        color: var(--blanco);
+        font-family: var(--fuentePrincipal);
+        font-size: 1.1rem;
+    }
+
+    .carousel-item--boton .boton2 {
+        padding: .6rem 1.1rem;
+        border-radius: 1rem;
+        text-align: center;
+        background-color: transparent;
+        background-color: var(--tercero);
+        font-family: var(--fuentePrincipal);
+        font-size: 1.1rem;
+        color: var(--blanco);
+
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .overlay-contenido {
+        position: absolute;
+        top: 55%;
+        left: 44%;
+        transform: translate(-10%, -17%);
+        color: var(--blanco);
+    }
+
+    .carousel-item--parrafo h2 {
+        font-size: 2.4rem;
+    }
+
+    .carousel-item--parrafo p {
+        font-size: 1.5rem;
+    }
+
+    .carousel-item--boton {
+        gap: 2rem;
+        margin-top: 1rem;
+    }
+
+    .carousel-item--boton .boton1 {
+        padding: 1rem 2rem;
+        border-radius: 1rem;
+        text-align: center;
+        background-color: transparent;
+        background-color: rgba(0, 0, 0, 0.1);
+        border: 2px solid var(--blanco);
+        color: var(--blanco);
+        font-family: var(--fuentePrincipal);
+        font-size: 1.5rem;
+    }
+
+    .carousel-item--boton .boton2 {
+        padding: 1rem 2rem;
+        border-radius: 1rem;
+        text-align: center;
+        background-color: transparent;
+        background-color: var(--tercero);
+        font-family: var(--fuentePrincipal);
+        font-size: 1.5rem;
+        color: var(--blanco);
+
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .overlay-contenido {
+        position: absolute;
+        top: 57%;
+        left: 44%;
+        transform: translate(-7%, 2%);
+        color: var(--blanco);
+    }
+
+    .carousel-item--parrafo h2 {
+        font-size: 2.4rem;
+    }
+
+    .carousel-item--parrafo p {
+        font-size: 2rem;
+    }
+
+    .carousel-item--boton {
+        gap: 2rem;
+        margin-top: 1rem;
+    }
+
+    .carousel-item--boton .boton1 {
+        padding: 1.5rem 2.5rem;
+        border-radius: 1rem;
+        text-align: center;
+        background-color: transparent;
+        background-color: rgba(0, 0, 0, 0.1);
+        border: 2px solid var(--blanco);
+        color: var(--blanco);
+        font-family: var(--fuentePrincipal);
+        font-size: 2rem;
+    }
+
+    .carousel-item--boton .boton2 {
+        padding: 1.5rem 2.5rem;
+        border-radius: 1rem;
+        text-align: center;
+        background-color: transparent;
+        background-color: var(--tercero);
+        font-family: var(--fuentePrincipal);
+        font-size: 2rem;
+        color: var(--blanco);
+
+    }
 }
