@@ -270,7 +270,6 @@ h3 {
 }
 /* Seccion compra de boletos para la conferencia */
 .compras{
-    background-color: aquamarine;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -286,12 +285,14 @@ text-transform: uppercase;
 .compra__inscripcion{
     font-family: var(--fuentePrincipal);
     font-size: 1.8rem;
+    margin: 1rem;
 
 }
-.compra__inscripcion span a{
+.compra__inscripcion span{
     font-family: var(--fuentePrincipal);
     color: var(--gris);
-    text-decoration: dotted;
+    border-bottom: 1px dotted black;
+    
 }
 
 
