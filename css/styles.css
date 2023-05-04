@@ -6,6 +6,7 @@
     --tercero: #1ad21a;
     --blanco: #fff;
     --negro: #000;
+    --gris:#b1b0b0;
 }
 
 /* Globales */
@@ -69,7 +70,199 @@ h3 {
     font-size: 2.6rem;
 }
 
-/* Media Queries */
+
+
+/* Desarrollo de la navegacion */
+.navbar-collapse {
+    /* border: 1px solid red; */
+    justify-content: space-between;
+}
+
+.navbar {
+    background-color: var(--negro);
+    opacity: .7;
+}
+
+.toggler-icon {
+    border: 1px solid yellow;
+    border-radius: .3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: .5rem;
+    color: var(--primero);
+    font-size: 700;
+
+}
+
+.navbar-brand {
+    justify-content: center;
+    align-items: center;
+    margin: 0rem 2rem 0rem 1rem;
+}
+
+.navbar-brand img {
+    max-width: 10rem;
+    margin-left: 1rem;
+    padding: 0;
+}
+
+.navbar-brand h3 {
+    color: var(--blanco);
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav__contendor {
+    margin-left: 2rem;
+}
+
+.nav-item p {
+    color: #999999;
+    font-family: var(--fuentePrincipal);
+    font-size: 1.3rem;
+    margin: .5rem;
+    padding: 0;
+    white-space: nowrap;
+}
+
+.nav-item:nth-child(1) p {
+    color: var(--primero);
+}
+
+.nav-item:nth-child(5) p {
+    color: var(--tercero);
+}
+
+/* <!-- Carousel con Fotos. Descripcion de la conferencia --> */
+.proyecto {
+    position: relative;
+}
+
+.contenedorCarousel {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.proyecto img {
+    background-color: rgba(0, 0, 0, 50%);
+    max-height: 700px;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 50%);
+}
+
+/* Grilla de los oradores principales del evento */
+.oradores__titulo h3{
+    text-align: center;
+    font-family: var(--fuentePrincipal);
+   margin-top: 2rem;
+   margin-bottom:0 ;
+    
+}
+.oradores__titulo h1{
+    text-align: center;
+    font-family: var(--fuentePrincipal);
+    margin: 0;
+    font-size: 5rem;
+
+}
+
+.contenedor__oradores{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.orador{
+    max-width: 344px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.orador__foto img{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: .5rem;  
+}
+.orador .marco{
+    border: .5px solid var(--gris);
+    margin: 0 0 1.2rem;
+}
+.orador__texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.orador .nombre{
+    font-size: 2.3rem;
+    font-weight: bold;
+    margin: 1rem;
+}
+.orador__texto p{
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+
+/*** Seccion foto Hawaii con contenido sobre La Conferencia  */
+.contenedor__sede{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.foto__sede{
+    display: flex;
+    flex-direction: column;
+}
+.foto__sede img{
+max-width: 100%;
+}
+.ciudad__sede{
+    background-color: var(--gris);
+    max-width: 100%;
+}
+.ciudad__sede{
+    display: flex;
+    flex-direction: column;
+}
+.carousel-item--boton .boton3 {
+    padding: .4rem .9rem;
+    border-radius: 1rem;
+    text-align: center;
+    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 2px solid var(--blanco);
+    color: var(--blanco);
+    font-family: var(--fuentePrincipal);
+    font-size: .9rem;
+}
+@media (min-width: 768px) {
+    .contenedor__sede{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
+
+
+/* ********Media Queries*************** */
 
 /* navegacion */
 @media screen and (max-width: 768px) {
@@ -371,129 +564,8 @@ h3 {
     }
 }
 
-
-
-
-/* Desarrollo de la navegacion */
-.navbar-collapse {
-    /* border: 1px solid red; */
-    justify-content: space-between;
-}
-
-.navbar {
-    background-color: var(--negro);
-    opacity: .7;
-}
-
-.toggler-icon {
-    border: 1px solid yellow;
-    border-radius: .3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    padding: .5rem;
-    color: var(--primero);
-    font-size: 700;
-
-}
-
-.navbar-brand {
-    justify-content: center;
-    align-items: center;
-    margin: 0rem 2rem 0rem 1rem;
-}
-
-.navbar-brand img {
-    max-width: 10rem;
-    margin-left: 1rem;
-    padding: 0;
-}
-
-.navbar-brand h3 {
-    color: var(--blanco);
-    font-size: 2rem;
-    margin: 0;
-    padding: 0;
-}
-
-.nav__contendor {
-    margin-left: 2rem;
-}
-
-.nav-item p {
-    color: #999999;
-    font-family: var(--fuentePrincipal);
-    font-size: 1.3rem;
-    margin: .5rem;
-    padding: 0;
-    white-space: nowrap;
-}
-
-.nav-item:nth-child(1) p {
-    color: var(--primero);
-}
-
-.nav-item:nth-child(5) p {
-    color: var(--tercero);
-}
-
-/* <!-- Carousel con Fotos. Descripcion de la conferencia --> */
-.proyecto {
-    position: relative;
-}
-
-.contenedorCarousel {
-    max-width: 100%;
-    max-height: 100%;
-}
-
-.proyecto img {
-    background-color: rgba(0, 0, 0, 50%);
-    max-height: 700px;
-}
-
-.overlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 50%);
-}
-
 /* Grilla de los oradores principales del evento */
-.oradores__titulo h3{
-    text-align: center;
-    font-family: var(--fuentePrincipal);
-   margin-top: 2rem;
-   margin-bottom:0 ;
-    
-}
-.oradores__titulo h1{
-    text-align: center;
-    font-family: var(--fuentePrincipal);
-    margin: 0;
-    font-size: 5rem;
 
-}
-.contenedor__oradores{
-    display: block;
-    text-align: center;
-}
-.orador img{
-    max-width: 50%;
-    max-height: 50%;
-}
-.orador .nombre{
-    font-size: 2.3rem;
-    font-weight: bold;
-    margin: 1rem;
-}
-.orador p{
-    font-size: 1.5rem;
-    line-height: 2.5rem;
-}
 @media (min-width: 768px) {
     .contenedor__oradores{
         display: grid;
@@ -501,11 +573,15 @@ h3 {
         gap:.5rem;
         margin: 1rem 2rem;
     }
-    .orador__lista{
-        padding: 1rem;
+    .contenedor__oradores .marco{
+        border-radius: .5rem;
+        border: .5px solid grey;
+        margin: -2rem 2rem 2rem;
     }
+
     .orador img{
         max-width: 100%;
         max-height: 100%;
+        padding: 2rem;
     }
 }
