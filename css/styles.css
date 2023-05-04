@@ -268,41 +268,30 @@ h3 {
     padding: 1rem;
     margin: 1rem;
 }
+/* Seccion compra de boletos para la conferencia */
+.compras{
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   color: var(--gris);
+}
+.oradores__titulo h3{
+text-transform: uppercase;
+}
+.oradores__titulo h1{
+    color: var(--negro);
+    }
+.compra__inscripcion{
+    font-family: var(--fuentePrincipal);
+    font-size: 1.8rem;
 
-@media (min-width: 768px) {
-    .contenedor__sede {
-        height: 400px;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        justify-content: center;
-        text-align: center;
-
-    }
-    .foto__sede img {
-        width: 100%;
-        height: 100%;
-    }
-    .ciudad__sede h2 {
-        font-size: 3.4rem;
-        padding: .5rem;
-    }
-    .ciudad__sede p {
-        font-size: 1.8rem;
-    }
-    .boton__sede{
-        text-align: start;
-    }
-    .boton__sede .boton3 {
-        border-radius: 0.3rem;
-        text-align: center;
-        background-color: transparent;
-        border: 2px solid var(--blanco);
-        color: var(--blanco);
-        font-family: var(--fuentePrincipal);
-        font-size: 1.5rem;
-        padding: 1rem 4rem;
-        margin: 1rem 2rem;
-    }
+}
+.compra__inscripcion span a{
+    font-family: var(--fuentePrincipal);
+    color: var(--gris);
+    text-decoration: dotted;
 }
 
 
@@ -630,3 +619,43 @@ h3 {
         padding: 2rem;
     }
 }
+
+/*** Seccion foto Hawaii con contenido sobre La Conferencia  */
+
+@media (min-width: 768px) {
+    .contenedor__sede {
+        height: 400px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        text-align: center;
+
+    }
+    .foto__sede img {
+        width: 100%;
+        height: 100%;
+    }
+    .ciudad__sede h2 {
+        font-size: 3.4rem;
+        padding: .5rem;
+    }
+    .ciudad__sede p {
+        font-size: 1.8rem;
+    }
+    .boton__sede{
+        text-align: start;
+    }
+    .boton__sede .boton3 {
+        border-radius: 0.3rem;
+        text-align: center;
+        background-color: transparent;
+        border: 2px solid var(--blanco);
+        color: var(--blanco);
+        font-family: var(--fuentePrincipal);
+        font-size: 1.5rem;
+        padding: 1rem 4rem;
+        margin: 1rem 2rem;
+    }
+}
+
+/* Seccion compra de boletos para la conferencia */
