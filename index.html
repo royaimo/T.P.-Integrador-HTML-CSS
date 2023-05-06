@@ -295,31 +295,32 @@
             <h1>Orador</h1>
         </div>
         <div class="compra__inscripcion">
-            <p>Anotáte como orador para dar una <span> charla ignite</span>.Cuentanos de qué quieres
+            <p>Anotáte como orador para dar una <span> charla ignite.</span> Cuentanos de qué quieres
                 hablar</p>
         </div>
-        <div class="compra__form">
-            <form action="#" method="get">
 
-                <div class="contenedor__nombre">
-                    <div class="compra__datos">
-                        <input type="text" name="nombre" id="nombre" placeholder="Nombre">
-                    </div>
-                    <div class="compra__mensaje">
-                        <input type="text" name="apellido" id="apellido" placeholder="Apellido">
-                    </div>
-                </div>
+        <form class="compra__form--contenedor" action="#" method="get">
 
-                <div class=" compra__mensaje--pie">
-                    <p>Recuerda incluir un título para tu charla</p>
-                </div>
 
-                <div class="compra__envia">
-                    <input type="submit" value="Enviar">
-                </div>
+            <div class="compra__mensaje">
+                <input class="input__form" type="text" name="nombre" id="nombre" placeholder="Nombre">
+            </div>
 
-            </form>
-        </div>
+            <div class="compra__mensaje">
+                <input class="input__form" type="text" name="apellido" id="apellido" placeholder="Apellido">
+            </div>
+
+            <div class="compra__mensaje">
+                <textarea class="input__form" name=" mensaje" id="mensaje" cols="20"
+                    rows="3">Sobre que quieres hablar</textarea>
+                <p>Recuerda incluir un título para tu charla</p>
+            </div>
+            <div class="compra__mensaje">
+                <input class="input__form submit" type="submit" value="Enviar">
+            </div>
+
+        </form>
+
     </section>
 
 
@@ -332,8 +333,16 @@
         crossorigin="anonymous"></script>
 </body>
 
-<footer>
-    <!-- <p>Aqui va el Footer de la página</p> -->
+<!-- Aqui va el Footer de la página -->
+<footer class="contenedor__footer">
+    <a href="#">Preguntas frecuentes</a>
+    <a href="#">Contáctanos</a>
+    <a href="#">Prensa</a>
+    <a href="#">Conferencias</a>
+    <a href="#">Términos y condiciones</a>
+    <a href="#">Privacidad</a>
+    <a href="#">Estudiantes</a>
 </footer>
+
 
 </html>
