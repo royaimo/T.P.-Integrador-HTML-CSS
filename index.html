@@ -32,6 +32,7 @@
 </head>
 
 <body class="contenedor">
+
     <!-- Navegación -->
     <nav class="navbar  navbar-expand-md ">
         <div class="container-fluid">
@@ -52,27 +53,27 @@
                 <div class="nav__contendor">
                     <ul class="navbar-nav d-flex justify-content-center align-items-center">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">
+                            <a class="nav-link" aria-current="page" href="#laConferencia">
                                 <p> La Conferencia</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="#losOradores">
                                 <p> Los oradores</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="#lugar">
                                 <p>El lugar y la Fecha</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="#orador">
                                 <p>Conviértete en orador</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="#comprar">
                                 <p>Comprar Tickets</p>
                             </a>
                         </li>
@@ -84,7 +85,7 @@
     <!-- Main -->
 
     <!-- Carrusel con fotos de Bs. As. y detalle de la Conferencia-->
-    <section>
+    <section id="laConferencia">
 
         <div id="testimoniosCarrusel" class="carousel carousel-dark slide" data-bs-ride="carousel">
             <div class="carousel-inner">
@@ -205,7 +206,7 @@
     </section><!--Fin section carrusel imagenes-->
 
     <!-- Grilla con los oradores del evento -->
-    <section>
+    <section id="losOradores">
         <div class="oradores__titulo">
             <h3>Conoce a los</h3>
             <h1>Oradores</h1>
@@ -268,7 +269,7 @@
     </section>
 
     <!-- Seccion foto Hawaii con contenido sobre La Conferencia -->
-    <section>
+    <section id="lugar">
         <div class="contenedor__sede">
             <div class="foto__sede">
                 <img src="img/honolulu.jpg" alt="honolulu">
@@ -288,8 +289,9 @@
             </div>
         </div>
     </section>
+
     <!-- Seccion compra de boletos para la conferencia -->
-    <section class="compras">
+    <section id="orador" class="compras">
         <div class="oradores__titulo">
             <h3>Conviértete en un</h3>
             <h1>Orador</h1>
@@ -323,9 +325,64 @@
 
     </section>
 
+    <!-- Sección comprar boletos -->
+    <section id="comprar" class="compras">
+        <h2>Inscripción a la Conferencia</h2>
+        <form action="#">
+            <div class="row">
+                <div class="col-md boton__compra">
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+                </div>
+                <div class="col-md boton__compra">
+                    <input type="text" name="apellido" id="apellido" placeholder="Apellido">
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-md boton__compra">
+                    <input type="email" name="email" id="email" placeholder="Tu Email">
+                </div>
+                <div class="col-md boton__compra">
+                    <input type="tel" name="telefono" id="telefono" placeholder="Telefóno">
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-md boton__compra">
+                    <input type="number" name="cantidadEntradas" id="cantidadEntradas" placeholder="Cantidad entradas">
+                </div>
+                <div class="col-md boton__compra">
+                    <select  name="seleccion" id="seleccion">
+                        <option  disabled="" selected="">--Seleccione comprador--</option>
+                        <option  value="10">Particular</option>
+                        <option  value="20">Estudiante</option>
+                        <option  value="30">Orador</option>
+                    </select>
+                </div>
+                <p class="parrafo">Costo entrada $1000</p>
+                <div class="col-md boton__compra">
+                    <input type="text" name="precioTotal" id="precioTotal" placeholder="Precio total">
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="column boton__compra">
+                    <input class="enviar" type="submit" value="Comprar">
+                </div>
+            </div>
+        </form>
+    </section>
 
-
-
+    <!-- <form class="producto__form">
+        <select class="producto__form--select producto__form--btn" name="seleccionTalla" id="seleccion">
+            <option disabled="" selected="">--Seleccione Talla--</option>
+            <option value="chica">Chica</option>
+            <option value="mediana">Mediana</option>
+            <option value="grande">Grande</option>
+        </select> -->
+        <!--Cantidad  -->
+        <!-- <input class="producto__form--cantidad producto__form--btn" type="number" min="1" name="cantidad" id="number"
+            placeholder="Cantidad"> -->
+        <!-- Agregar Carrito -->
+        <!-- <input type="submit" class="producto__form--submit" value="agregar al carrito">
+    </form> -->
 
     <!-- javascript bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
