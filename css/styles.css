@@ -6,7 +6,7 @@
     --tercero: #1ad21a;
     --blanco: #fff;
     --negro: #000;
-    --gris: #a29f9f;
+    --gris: #898686c7;
 }
 
 /* Globales */
@@ -360,6 +360,7 @@ color: var(--blanco) !important;
 .parrafo{
     display: block;
     text-align: start;
+    margin-left: 1rem;
 }
 
 
