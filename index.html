@@ -329,8 +329,32 @@
 
     <!-- Sección comprar boletos -->
     <section id="comprar" class="compras">
-        <h2>Inscripción a la Conferencia</h2>
-        <form action="#">
+        <div class="card-group m-5 ">
+            <div class="card text-center mx-2 p-4 border border-info lh-lg">
+              <h3>Estudiante</h3>
+              <p>Tiene un descuento</p>
+              <p  class="fw-bold">80 %</p>
+              <p class="fs-4">* Presentar documentación</p>
+            </div>
+            <div class="card text-center mx-2 p-4 border border-primary  lh-lg">
+                <h3>Trainee</h3>
+                <p>Tiene un descuento</p>
+                <p  class="fw-bold">50 %</p>
+                <p class="fs-4">* Presentar documentación</p>
+            </div>
+            <div class="card text-center mx-2 p-4 border border-warning lh-lg">
+                <h3>Junior</h3>
+                <p>Tiene un descuento</p>
+                <p class="fw-bold">15 %</p>
+                <p class="fs-4">* Presentar documentación</p>
+            </div>
+          </div>
+
+          <div class="text-center lh-1 p-2">
+            <p class="">VENTA</p>
+            <h2 class="">VALOR TICKET $200</h2>
+          </div>
+        <form>
             <div class="row">
                 <div class="col-md boton__compra">
                     <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
@@ -341,32 +365,34 @@
             </div>
             <div class="row d-flex justify-content-center align-items-center">
                 <div class="col-md boton__compra">
-                    <input type="email" name="email" id="email" placeholder="Tu Email" required>
-                </div>
-                <div class="col-md boton__compra">
-                    <input type="tel" name="telefono" id="telefono" placeholder="Telefóno" required>
+                    <input type="email" name="email" id="email" placeholder="Correo" required>
                 </div>
             </div>
             <div class="row d-flex justify-content-center align-items-center">
                 <div class="col-md boton__compra">
-                    <input type="number" min="1" name="cantidadEntradas" id="cantidadEntradas" onkeyup="calPrecioFinal()"  placeholder="Cantidad entradas" required>
+                    <label class="ms-3" for="cantidadEntradas">Cantidad</label>
+                    <input type="number" min="1" name="cantidadEntradas" id="cantidadEntradas" onkeyup="calPrecioFinal()" onchange="calPrecioFinal()" placeholder="Cantidad tickets" required>
                 </div>
                 <div class="col-md boton__compra">
-                    <select  name="seleccion" id="porcDescuento" onchange="calPrecioFinal()">
-                        <!-- <option  disabled="" selected=""  >--Seleccione comprador--</option> -->
-                        <option  value="10">Particular</option>
-                        <option  value="20">Estudiante</option>
-                        <option  value="30">Orador</option>
+                    <label class="ms-3" for="porcDescuento">Categoría</label>
+                    <select  name="seleccion" id="porcDescuento" onkeyup="calPrecioFinal()" onchange="calPrecioFinal()">
+                        <option  value="80">Estudiante</option>
+                        <option  value="50">Trainee</option>
+                        <option  value="15">Junior</option>
                     </select>
                 </div>
-                <p class="parrafo">Costo entrada $1000</p>
+            </div>
+            <div class="totalAPagar">
                 <div class="col-md boton__compra">
-                    <input type="text" name="valorTotal" id="valorTotal"  disabled placeholder="Valor total con descuento"  >
+                    <input type="text" name="valorTotal" id="valorTotal"  disabled placeholder="Total a pagar: $ "  >
                 </div>
             </div>
             <div class="row d-flex justify-content-center align-items-center">
-                <div class="column boton__compra">
-                    <input class="enviar" type="submit" value="Comprar">
+                <div class="col-md boton__compra">
+                    <input class="enviar" type="reset" value="Borrar">
+                </div>
+                <div class="col-md boton__compra">
+                    <input class="enviar" type="submit"  onclick="enviarFormulario()" value="Resumen">
                 </div>
             </div>
         </form>

@@ -353,14 +353,9 @@ font-size: 1.4rem;
     color: var(--gris);
 }
 .enviar {
-background-color: var(--segundo)!important;
+background-color: var(--tercero)!important;
 font-size: 1.8rem !important;
 color: var(--blanco) !important;
-}
-.parrafo{
-    display: block;
-    text-align: start;
-    margin-left: 1rem;
 }
 
 
